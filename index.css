@@ -1,9 +1,4 @@
-canvas {
-    background: tomato;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
+
 
 *{
     margin: 0;
@@ -35,9 +30,18 @@ canvas {
 .content{
     grid-area: content;
     height: 470px;
-    /*align-self: center;*/
-    /*justify-self: start;*/
+    position: relative;
+   /* align-self: center;
+    justify-self: start;*/
 }
+
+canvas {
+    background: tomato;
+    position: absolute;
+    /*height: 100%;
+    width: 100%;*/
+}
+
 .footer{
     grid-area: footer;
 }
@@ -65,3 +69,10 @@ canvas {
 .grid div:nth-last-child(odd){
     background-color: #39CCCC;
 }
+
+
+ #color{
+        position: fixed;
+        left:0;
+        top:0;
+    }

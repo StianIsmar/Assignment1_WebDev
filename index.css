@@ -36,7 +36,7 @@
 }
 
 canvas {
-    background: tomato;
+    background:#001f3f;
     position: absolute;
     /*height: 100%;
     width: 100%;*/
@@ -44,6 +44,8 @@ canvas {
 
 .footer{
     grid-area: footer;
+    font-family: 'Karla';font-size: 12px;
+
 }
 
 
@@ -76,3 +78,10 @@ canvas {
         left:0;
         top:0;
     }
+
+.box{
+    width: 1000px;
+    height: 20px;
+    background-color: #eee;
+    margin: 0%;
+}

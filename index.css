@@ -1,0 +1,67 @@
+canvas {
+    background: tomato;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.title{
+    grid-area:title;
+    /*align-self: center;*/
+    justify-self: center;
+    font-family: 'Karla';font-size: 50px;
+    color: #B10DC9;
+
+   /* grid-column-end:span 1;
+    grid-row-end:span 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    */
+}
+
+/*.header{
+    grid-area:header;
+    height: fit-content;
+}*/
+
+/*.sidebar{
+    grid-area:sidebar;
+    
+}*/
+.content{
+    grid-area: content;
+    height: 470px;
+    /*align-self: center;*/
+    /*justify-self: start;*/
+}
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas:
+    ". . . ." 
+    ". title title ."
+    ". content content ."
+    ". footer footer .";
+    
+}
+
+.grid div:nth-last-child(even){
+    background-color: #FF851B;
+}
+
+.grid div:nth-last-child(odd){
+    background-color: #39CCCC;
+}

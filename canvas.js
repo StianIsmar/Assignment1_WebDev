@@ -23,15 +23,6 @@ c.fillRect(300,300,100,100);
 
 
 
-//3
-/* RANDOMIZED VALUES
-var x=Math.random()*1000;
-var y=Math.random()*470;
-var dy=(4*Math.random()-0.5)*4;
-var dx=(4*Math.random()-0.5)*4;
-var radius = 30;
-*/
-
 
 
 function Circle(x,y,dx,dy,radius){
@@ -60,6 +51,7 @@ function Circle(x,y,dx,dy,radius){
         this.draw();
     }
 }
+
 
 
 /* RANDOMIZED VALUES
@@ -112,7 +104,7 @@ $('#myButton').click(() => {
 //Legge til tekst under
 $(".box").click(() => {
     $("h1").html("Well done ");
-    $(box).css("background-color", "#2A3132");//ENDRE FARGEN FUNKER IKKE?
+    $(box).css("background-color", "#75b3f4");//ENDRE FARGEN FUNKER IKKE?
     //ENDRE FONTEN PÅ DETTE?
 });
 

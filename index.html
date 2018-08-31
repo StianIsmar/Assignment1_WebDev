@@ -17,7 +17,7 @@
 </div>
     <div class="grid">
 
-        <div class="title">This artwork is made by "Unknown"</div>
+        <div class="title"><i>"Atoms in Motion"</i> by unknown artist</div>
         <!--<div class="header">Header</div> -->       
         <!--<div class="sidebar">Sidebar</div>-->
         <div class="content">
@@ -37,15 +37,56 @@
     </div>
     
 </div>
-<div id="myDocumentation"> 
-<h4>Documentation:</h4 id= "docHeader">
-    <p>
-        GSDAGJGLDSJGLØSDJGØLJDSGLØJSDLØGJLSØDJGLØSJGØLJHSØHGLØSDH
-        gdsgsdgsdsdgsdg.gdsgsd
 
-    </p>
+<div id="myDocumentation"> 
+    <h4 id= "docHeader">Documentation:</h4 >
+        <br>
+        
+        <h5 id = "cssHeader" ><b>CSS-grid VS. Flexbox:</b></h5>
+      
+        <p>CSS-grid er en CSS-egenskap som lar brukeren plassere elementer i et rutenett. I CSS-grid kan brukeren plassere elementer i et todimensjonalt rutenett, hvor hver "celle" kan ha ulik størrelse. Flexbox legger elementer kun i en dimensjon, altså en rad eller kolonne. Om man har en header hvor for eksempel knapper skal plasseres bortover med fast avstand vil flexbox være et bra alternativ.</p> 
+        <br>       
+        <p>For min webside ønsket jeg å ha følgende celler: header, content og footer. Jeg valgte å bruke CSS-grid. I retrospektiv hadde flexbox gjort samme jobben, da jeg kun hadde tre paneler (rader) oppå hverandre. </p>
+        <br>       
+        <p>Slik jeg har forstått det er CSS-grid mer anvendelig, da man jobber med kolonner og rader. Griden gjør det også lettere å endre rekkefølgene på elementene i HTML-filen gjennom .css-filen, uten å endre på selve HTML'en. Flexbox gjør det  enklere å plassere ut elementer i en retning. En negativ side ved CSS grid er at den ikke støttes på Internet Explorer. </p>
+        <p>CSS-grid VS. Flexbox
+         CSS-grid er en CSS-egenskap som lar brukeren plassere elementer i et rutenett. I CSS-grid kan brukeren plassere elementer i et todimensjonalt rutenett, hvor hver "celle" kan ha ulik størrelse. Flexbox legger elementer kun i en dimensjon, altså en rad eller kolonne. Om man har en header hvor for eksempel knapper skal plasseres bortover med fast avstand vil flexbox være et bra alternativ. 
+          For min webside ønsket jeg å ha følgende celler: header, content og footer. Jeg valgte å bruke CSS-grid. I retrospektiv hadde flexbox gjort samme jobben, da jeg kun hadde tre paneler (rader) oppå hverandre.                
+          Slik jeg har forstått det er CSS-grid mer anvendelig, da man jobber med kolonner og rader. Griden gjør det også lettere å endre rekkefølgene på elementene i HTML-filen gjennom .css-filen, uten å endre på selve HTML'en. Flexbox gjør det  enklere å plassere ut elementer i en retning. En negativ side ved CSS grid er at den ikke støttes på Internet Explorer. </p>
+        <br>
+        <h6 id=htmlCanvasText><b>HTML canvas VS. SVG:</b></h6>
+        <p>HTML canvas oppretter et "lerret" hvor brukeren kan opprette og manipulere bildepiksler for bildepiksel ved bruk av JavaScript. "canvas"-elementer er oppløsningsavhengige, slik at kan miste kvalitet når de blir forstørret opp.</p>
+        <br>
+        <p>SVG står for Scalable Vector Graphics og er et XML filformat laget for vektorgrafikk. SVG kan skaleres uten tap av kvalitet, som canvas ikke kunne. </p>
+        <br>
+        <p>For dette prosjektet valgte jeg å bruke HTML canvas, da jeg ikke hadde noe behov for høy oppløsning. Arc- og beginPath-metoder brukte jeg på canvaset mitt, som gjorde det enkelt å kode bevegelse. </p>
+        <br>
+        <h7 id ="jqueryHeader"><b>JQuery:</b> </h7>
+        <p>JQuery er et JavaScript bibliotek laget for å forenkle klient-script siden av HTML. JQuery gjør koden mer oversiktelig, og man krever færre linjer med koder på grunn av innebygde funksjoner.
+                I prosjektet mitt var det veldig greit å legge JQuery til i HTML-filen, og bruke click og hover- metodene for brukerinteraksjon med canvaset. </p>
+        <br>
+        <h8 id="crossBrowserHeader"><b>Cross-browser testing:</b> </h8>
+        <p>Cross-browser testing tar for seg testing av web-applikasjonen på flere ulike nettlesere. Dette gjør man for å forsikre seg om at applikasjonen er kompatibel på nettleseren brukeren kjører. For mitt prosjekt åpnet jeg websiden i både Chrome og Mozilla Firefox, som begge funket. </p>
+        <br>
+        <h9 id = "kilderHeader"><b>Kilder:</b> </h9>
+        <p>For de bevegelige sirklene tok jeg utgangspunkt i denne YouTube-tutorialen: https://www.youtube.com/watch?v=yq2au9EfeRQ</p>
+        <br>
+        <p>Andre kilder for dokumentasjonen: </p>
+        <br>
+        <p>https://spaceninja.com/2015/08/24/what-is-flexbox/</p>
+        <p>https://jquery.com/</p>
+        <p>https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf</p>
+        <p>https://www.sitepoint.com/canvas-vs-svg-choosing-the-right-tool-for-the-job/</p>
+        <br>
+                
+                
+
+                    
+
+    
 
 </div>
+
 <script src="canvas.js"></script>
 </body>
 </html>

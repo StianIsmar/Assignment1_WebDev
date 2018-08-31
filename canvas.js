@@ -6,6 +6,10 @@ var canvas=document.getElementById("canvas");
     canvas.setAttribute('width','1000');
     canvas.setAttribute('height','470');
 
+    //Tekst på canvas i content
+    c.font = "30px Karla";
+    c.strokeText("Can you see me?",10,50);
+
 
 var i;
 
@@ -18,34 +22,6 @@ c.fillRect(300,100,100,100);
 c.fillRect(300,300,100,100);
 
 
-//line
-c.beginPath();
-c.moveTo(50,300);
-c.lineTo(300,100);
-c.lineTo(600,300);
-c.strokeStyle="lightblue";
-c.stroke();
-
-//arc
-c.beginPath();
-c.arc(300,300,30,0,Math.PI*2,true);
-c.strokeStyle = "#blue"
-c.stroke();
-
-/*
-//Drawing random circles
-for(var i = 0; i<100;i++){
-    var x=Math.random() * 1000;
-    var y=Math.random() * 470;
-    c.beginPath();
-    c.arc(x,y,30,0,Math.PI*2,true);
-    c.closePath();
-    c.fillStyle = "lightblue";
-    c.fill();
-    //c.strokeStyle = "#blue"
-   // c.stroke();
-}
-*/
 
 //3
 /* RANDOMIZED VALUES
@@ -59,6 +35,7 @@ var radius = 30;
 
 
 function Circle(x,y,dx,dy,radius){
+    this.color="#00b3ff";
     this.x=x;
     this.y=y;
     this.dx=dx;
@@ -67,7 +44,8 @@ function Circle(x,y,dx,dy,radius){
     this.draw = function(){
         c.beginPath();
         c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
-        c.fillStyle = '#3D9970';
+        
+        c.fillStyle = this.color;
         c.fill();
     }
     this.update = function(){
@@ -113,61 +91,46 @@ function animate(){
 
 }
 
-//for (var j = 0; j<10;j++){
-    animate();
+animate();
 
-//}
+//Change colour of circles
 
-
-/*for (i  = 0; i<100; i++){
-    c.beginPath();
-    c.arc(100+i,150,10,0,Math.PI*2,true);
-    c.closePath();
-    c.fill();
-}*/
-
-    
-    
-    /*sirkel=new Sirkel();
-
-update()
-
-function update(){
-    c.clearRect(0,0,1000,1000)
-    sirkel.update()
-
-
-    requestAnimationFrame(update)
-}
-
-
-class Sirkel{
-    constructor(){
-        this.x=0
-        this.y=0
-        this.phase=0
-        this.amp=200
-        this.r=50
-        
-        c.fillStyle="lightgreen"
+$('#myButton').click(() => {
+    console.log("gsdgdsg");
+    for(var x in circleArray){
+        circleArray[x].color=`hsl(${Math.random()*360}, 50%, 70%)`;
+        console.log(x);
     }
-    update(){
-        c.fillStyle=color.value
-        this.phase+=.1
-        this.x=500+this.amp*Math.cos(this.phase)
-        this.y=300+this.amp*Math.sin(this.phase)
-        c.beginPath()
-        c.arc(this.x,this.y,this.r,0,Math.PI*2)
-        c.fill()
-    }
-}*/
+});
+
+
+//mouseclick jquery
 
 
 
 
-//create circles by clicking!
-$(".box").click(function(){
+//Legge til tekst under
+$(".box").click(() => {
     $("h1").html("Well done ");
-    $("p").css("c.fillStyle", "yellow");//ENDRE FARGEN FUNKER IKKE?
+    $(box).css("background-color", "#2A3132");//ENDRE FARGEN FUNKER IKKE?
     //ENDRE FONTEN PÅ DETTE?
+});
+
+
+$(function(){
+    $('#box').hover(function(){
+        $(this).height(1.25*$(this).height());
+    },function(){
+        $(this).height(0.8*$(this).height());
+ 
+    });
+});
+
+$("#canvas").click(function(){
+    $("h1").html("Well done ");
+    $(canvas).css("background-color", "#598234");//ENDRE FARGEN FUNKER IKKE?
+});
+
+$("#docButton").click(function(){
+    $("#myDocumentation").css("display","block");
 });

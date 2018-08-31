@@ -4,13 +4,15 @@
     margin: 0;
     padding:0;
 }
-
+body{
+    font-family: 'Karla';
+}
 .title{
     grid-area:title;
     /*align-self: center;*/
     justify-self: center;
     font-family: 'Karla';font-size: 50px;
-    color: #B10DC9;
+    color: #336B87;
 
    /* grid-column-end:span 1;
     grid-row-end:span 2;
@@ -36,7 +38,7 @@
 }
 
 canvas {
-    background:#001f3f;
+    background:#336B87;
     position: absolute;
     /*height: 100%;
     width: 100%;*/
@@ -45,7 +47,8 @@ canvas {
 .footer{
     grid-area: footer;
     font-family: 'Karla';font-size: 12px;
-
+    background-color: rgb(0, 217, 255);
+    height: 50px;
 }
 
 
@@ -55,7 +58,7 @@ canvas {
 .grid {
     display:grid;
     grid-template-columns: 1fr 500px 500px 1fr;
-    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-rows: 1fr auto auto 1fr 1fr;
     grid-template-areas:
     ". . . ." 
     ". title title ."
@@ -63,13 +66,21 @@ canvas {
     ". footer footer .";
     
 }
-
-.grid div:nth-last-child(even){
-    background-color: #FF851B;
+#myButton{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    align-self: center;
+    margin:0px;
 }
-
+/*
+.grid div:nth-last-child(even){
+   background-color: #FF851B;
+}
+*/
 .grid div:nth-last-child(odd){
-    background-color: #39CCCC;
+    background-color: #E6DF44;
 }
 
 
@@ -79,9 +90,27 @@ canvas {
         top:0;
     }
 
-.box{
+#box{
     width: 1000px;
     height: 20px;
-    background-color: #eee;
+    background-color: #F0810F;
     margin: 0%;
+    text-align: center;
+}
+button{
+    border:0;
+    border-radius:0.25rem;
+    background-color: aquamarine;
+    color: black;
+    margin:30px;
+
+}
+#myDocumentation{
+    display:none;
+    text-align-last: center;
+
+}
+#docHeader{
+font-style:bold;
+font-size: 30px;
 }

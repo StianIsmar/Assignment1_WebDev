@@ -9,28 +9,21 @@ body{
 }
 .title{
     grid-area:title;
-    /*align-self: center;*/
     justify-self: center;
     font-family: 'Karla';font-size: 50px;
     color: #336B87;
-
-
 }
-
 
 .content{
     grid-area: content;
     height: 470px;
     position: relative;
-   /* align-self: center;
-    justify-self: start;*/
+
 }
 
 canvas {
     background:#336B87;
     position: absolute;
-    /*height: 100%;
-    width: 100%;*/
 }
 
 .footer{
@@ -39,10 +32,6 @@ canvas {
     background-color: rgb(0, 217, 255);
     height: 50px;
 }
-
-
-
-
 
 .grid {
     display:grid;
@@ -64,15 +53,9 @@ canvas {
     margin:0px;
 }
 
-/*
-.grid div:nth-last-child(even){
-   background-color: #FF851B;
-}
-*/
 .grid div:nth-last-child(odd){
     background-color: #E6DF44;
 }
-
 
  #color{
         position: fixed;
@@ -87,14 +70,16 @@ canvas {
     margin: 0%;
     text-align: center;
 }
+
 button{
     border:0;
     border-radius:0.25rem;
     background-color: #F0810F;
     color: black;
     margin:30px;
-
+    font-size: 15px;
 }
+
 #myDocumentation{
     display:none;
     /*text-align-last: center;*/
@@ -102,7 +87,6 @@ button{
     padding-right:150px;
     padding-top: 20px;
     font-size: 15px;
-      
 
 }
 #docButton{
@@ -120,23 +104,24 @@ font-size: 40px;
 text-align-last: center;
 align-self: center;
 color: #2976c6;
-
 }
-
 
 #cssHeader{
 font-size: 18px;
-
 }
+
 #htmlCanvasText{
     font-size: 18px;
 }
+
 #jqueryHeader{
     font-size: 18px;
 }
+
 #crossBrowserHeader{
     font-size: 18px;
 }
+
 #kilderHeader{
     font-size: 18px;
 }

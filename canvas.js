@@ -6,9 +6,7 @@ var canvas=document.getElementById("canvas");
     canvas.setAttribute('width','1000');
     canvas.setAttribute('height','470');
 
-    //Tekst på canvas i content
-    c.font = "30px Karla";
-    c.strokeText("Can you see me?",10,50);
+
 
 
 var i;
@@ -21,10 +19,7 @@ c.fillRect(400,100,100,100);
 c.fillRect(300,100,100,100);
 c.fillRect(300,300,100,100);
 
-
-
-
-
+//Circle animations
 function Circle(x,y,dx,dy,radius){
     this.color="#00b3ff";
     this.x=x;
@@ -35,7 +30,6 @@ function Circle(x,y,dx,dy,radius){
     this.draw = function(){
         c.beginPath();
         c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
-        
         c.fillStyle = this.color;
         c.fill();
     }
@@ -51,18 +45,9 @@ function Circle(x,y,dx,dy,radius){
         this.draw();
     }
 }
-
-
-
-/* RANDOMIZED VALUES
-var x=Math.random()*1000;
-var y=Math.random()*470;
-var dy=(4*Math.random()-0.5)*4;
-var dx=(4*Math.random()-0.5)*4;
-var radius = 30;
-*/
+//Array containing all circle objects
 var circleArray=[];
-
+//For-loop creating random objects and pushing them into the array.
 for (var i=0;i<100; i++){
     var radius = 30;
     var x=Math.random()*(1000-radius*2)+ radius ;
@@ -71,7 +56,6 @@ for (var i=0;i<100; i++){
     var dx=(4*Math.random()-0.5)*1;
     circleArray.push(new Circle(x,y,dx,dy,radius));  
 }
-console.log(circleArray);
 
 function animate(){
     requestAnimationFrame(animate);
@@ -85,8 +69,7 @@ function animate(){
 
 animate();
 
-//Change colour of circles
-
+//Change colour of circles by clicking button
 $('#myButton').click(() => {
     console.log("gsdgdsg");
     for(var x in circleArray){
@@ -96,18 +79,11 @@ $('#myButton').click(() => {
 });
 
 
-//mouseclick jquery
-
-
-
-
 //Legge til tekst under
 $(".box").click(() => {
     $("h1").html("Well done ");
-    $(box).css("background-color", "#75b3f4");//ENDRE FARGEN FUNKER IKKE?
-    //ENDRE FONTEN PÅ DETTE?
+    $(box).css("background-color", "#75b3f4");
 });
-
 
 $(function(){
     $('#box').hover(function(){
@@ -120,9 +96,9 @@ $(function(){
 
 $("#canvas").click(function(){
     $("h1").html("Well done ");
-    $(canvas).css("background-color", "#598234");//ENDRE FARGEN FUNKER IKKE?
+    $(canvas).css("background-color", "#598234");
 });
-
+//Show documentation by clicking button
 $("#docButton").click(function(){
     $("#myDocumentation").css("display","block");
 });

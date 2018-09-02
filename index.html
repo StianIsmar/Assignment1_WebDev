@@ -10,40 +10,32 @@
     <link href="index.css" rel="stylesheet"  type="text/css">
     <title>CSS Grids</title>
 
-</head>
-<body>
-
-   
-</div>
-    <div class="grid">
-
-        <div class="title"><i>"Atoms in Motion"</i> by unknown artist</div>
-        <!--<div class="header">Header</div> -->       
-        <!--<div class="sidebar">Sidebar</div>-->
-        <div class="content">
-            <canvas id ="canvas">
-            </canvas>
-        <!--<input type="color" name="" id = "color" value ="#263238"> -->
-
-        </div>
-        <div class="footer">
-            <div class="box" id = 'box'>
-            
-            <h1>Click the orange rectangle or the picture to see what happens</h1>
-            <button id = 'myButton'>Change circle colour</button>
-            <button id = 'docButton'>Open documentation</button>
-
-        </div>
-    </div>
     
-</div>
+</head>
+<body>   
+    </div>
+        <div class="grid">
+
+            <div class="title"><i>"Atoms in Motion"</i> by unknown artist</div>
+            <div class="content">
+                <canvas id ="canvas">
+                </canvas>
+            </div>
+            <div class="footer">
+                <div class="box" id = 'box'>
+                <h1>Click the orange rectangle or the picture to see what happens</h1>
+                <button id = 'myButton'>Change circle colour</button>
+                <button id = 'docButton'>Open documentation</button>
+
+            </div>
+        </div>
+    
+    </div>
 
 <div id="myDocumentation"> 
     <h4 id= "docHeader">Documentation:</h4 >
         <br>
-        
         <h5 id = "cssHeader" ><b>CSS-grid VS. Flexbox:</b></h5>
-      
         <p>CSS-grid er en CSS-egenskap som lar brukeren plassere elementer i et rutenett. I CSS-grid kan brukeren plassere elementer i et todimensjonalt rutenett, hvor hver "celle" kan ha ulik størrelse. Flexbox legger elementer kun i en dimensjon, altså en rad eller kolonne. Om man har en header hvor for eksempel knapper skal plasseres bortover med fast avstand vil flexbox være et bra alternativ.</p> 
         <br>       
         <p>For min webside ønsket jeg å ha følgende celler: header, content og footer. Jeg valgte å bruke CSS-grid. I retrospektiv hadde flexbox gjort samme jobben, da jeg kun hadde tre paneler (rader) oppå hverandre. </p>
@@ -62,7 +54,7 @@
         <p>For dette prosjektet valgte jeg å bruke HTML canvas, da jeg ikke hadde noe behov for høy oppløsning. Arc- og beginPath-metoder brukte jeg på canvaset mitt, som gjorde det enkelt å kode bevegelse. </p>
         <br>
         <h7 id ="jqueryHeader"><b>JQuery:</b> </h7>
-        <p>JQuery er et JavaScript bibliotek laget for å forenkle klient-script siden av HTML. JQuery gjør koden mer oversiktelig, og man krever færre linjer med koder på grunn av innebygde funksjoner.
+        <p>JQuery er et JavaScript bibliotek laget for å forenkle klient-script siden av HTML. JQuery gjør koden mer oversiktlig, og man krever færre linjer med kode på grunn av innebygde funksjoner.
                 I prosjektet mitt var det veldig greit å legge JQuery til i HTML-filen, og bruke click og hover- metodene for brukerinteraksjon med canvaset. </p>
         <br>
         <h8 id="crossBrowserHeader"><b>Cross-browser testing:</b> </h8>
@@ -78,13 +70,6 @@
         <p>https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf</p>
         <p>https://www.sitepoint.com/canvas-vs-svg-choosing-the-right-tool-for-the-job/</p>
         <br>
-                
-                
-
-                    
-
-    
-
 </div>
 
 <script src="canvas.js"></script>

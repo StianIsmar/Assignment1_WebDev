@@ -1,4 +1,4 @@
-# Assignment 1 in IT2810 Web development at NTNU.
+# Assignment 1 in IT2810 Web development at NTNU
 
 Run files:
   1. Download .zip file
